@@ -1,0 +1,284 @@
+<mxGraphModel dx="1422" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===== TITLE ===== -->
+    <mxCell id="title" value="Use Case Diagram per Halaman — CS2 Knife Wiki" style="text;html=1;fontSize=20;fontStyle=1;align=center;" vertex="1" parent="1">
+      <mxGeometry x="400" y="20" width="860" height="40" as="geometry" />
+    </mxCell>
+
+    <!-- ============================================================
+         ACTOR DEFINITIONS (shared, placed on left)
+         ============================================================ -->
+    <!-- Guest -->
+    <mxCell id="ag" value="" style="shape=mxgraph.flowchart.start_2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="30" y="180" width="50" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="agl" value="Guest" style="text;html=1;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="235" width="70" height="18" as="geometry" />
+    </mxCell>
+
+    <!-- User -->
+    <mxCell id="au" value="" style="shape=mxgraph.flowchart.start_2;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="30" y="520" width="50" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="aul" value="User (login)" style="text;html=1;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="15" y="575" width="80" height="18" as="geometry" />
+    </mxCell>
+
+    <!-- Admin -->
+    <mxCell id="aa" value="" style="shape=mxgraph.flowchart.start_2;fillColor=#ffe6cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="30" y="860" width="50" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="aal" value="Admin" style="text;html=1;align=center;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="20" y="915" width="70" height="18" as="geometry" />
+    </mxCell>
+
+
+    <!-- ============================================================
+         PAGE 1: index.php
+         ============================================================ -->
+    <mxCell id="p1_sys" value="index.php — Home" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="130" y="100" width="280" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="p1_1" value="Lihat halaman beranda" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="138" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p1_2" value="Lihat greeting berdasarkan jam" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="193" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p1_3" value="Lihat visit count (cookie)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="248" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep1_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p1_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep1_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p1_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep1_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p1_3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 2: knives.php
+         ============================================================ -->
+    <mxCell id="p2_sys" value="knives.php — Daftar Knife" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="440" y="100" width="280" height="170" as="geometry" />
+    </mxCell>
+    <mxCell id="p2_1" value="Lihat semua knife dari database" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="465" y="138" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p2_2" value="Klik knife → buka detail" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="465" y="193" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep2_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p2_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep2_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p2_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 3: detail.php
+         ============================================================ -->
+    <mxCell id="p3_sys" value="detail.php — Detail Knife" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="750" y="100" width="280" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="p3_1" value="Lihat info lengkap knife" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="775" y="138" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p3_2" value="Lihat daftar skins" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="775" y="193" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p3_3" value="Lihat wear levels" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="775" y="248" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep3_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p3_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep3_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p3_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep3_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p3_3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 4: compare.php
+         ============================================================ -->
+    <mxCell id="p4_sys" value="compare.php — Bandingkan Knife" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="1060" y="100" width="280" height="170" as="geometry" />
+    </mxCell>
+    <mxCell id="p4_1" value="Lihat perbandingan stat knife" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1085" y="138" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p4_2" value="Lihat pemenang tiap kategori" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1085" y="193" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep4_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p4_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep4_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p4_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 5: quiz.php
+         ============================================================ -->
+    <mxCell id="p5_sys" value="quiz.php — Kuis" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="1370" y="100" width="260" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="p5_1" value="Jawab soal kuis" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1390" y="138" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p5_2" value="Submit jawaban (form POST)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1390" y="193" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p5_3" value="Lihat skor &amp; review jawaban" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1390" y="248" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep5_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p5_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep5_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p5_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep5_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="au" target="p5_3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 6: contact.php
+         ============================================================ -->
+    <mxCell id="p6_sys" value="contact.php — Kontak" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="130" y="430" width="280" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="p6_1" value="Isi form kontak" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="468" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p6_2" value="Submit pesan (form POST)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="523" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p6_3" value="Validasi input (nama, email)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="578" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep6_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p6_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep6_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p6_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep6_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p6_3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 7: about.php
+         ============================================================ -->
+    <mxCell id="p7_sys" value="about.php — About" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="440" y="430" width="280" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="p7_1" value="Lihat info tentang website" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="465" y="468" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p7_2" value="Lihat tech stack &amp; fitur" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="465" y="520" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep7_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p7_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep7_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p7_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 8: login.php
+         ============================================================ -->
+    <mxCell id="p8_sys" value="login.php — Login" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="750" y="430" width="280" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="p8_1" value="Isi form username &amp; password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="775" y="468" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p8_2" value="Submit login (form POST)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="775" y="523" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p8_3" value="Centang Remember Me (cookie)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="775" y="578" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep8_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="au" target="p8_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep8_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="au" target="p8_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep8_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="au" target="p8_3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 9: register.php
+         ============================================================ -->
+    <mxCell id="p9_sys" value="register.php — Register" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="1060" y="430" width="280" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="p9_1" value="Isi form registrasi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1085" y="468" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p9_2" value="Validasi username &amp; password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1085" y="523" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p9_3" value="Simpan akun ke database" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1085" y="578" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep9_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p9_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep9_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p9_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep9_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="ag" target="p9_3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 10: logout.php
+         ============================================================ -->
+    <mxCell id="p10_sys" value="logout.php — Logout" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="1370" y="430" width="260" height="170" as="geometry" />
+    </mxCell>
+    <mxCell id="p10_1" value="Hancurkan session" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1390" y="468" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p10_2" value="Hapus cookie remember me" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1390" y="523" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep10_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="au" target="p10_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep10_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="au" target="p10_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         PAGE 11: admin.php
+         ============================================================ -->
+    <mxCell id="p11_sys" value="admin.php — Admin Panel (CRUD)" style="swimlane;startSize=28;fontStyle=1;fontSize=12;fillColor=#f5f5f5;strokeColor=#666;" vertex="1" parent="1">
+      <mxGeometry x="130" y="790" width="780" height="220" as="geometry" />
+    </mxCell>
+    <mxCell id="p11_1" value="Tambah knife baru (Create)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="828" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p11_2" value="Lihat semua knife (Read)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="345" y="828" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p11_3" value="Edit knife (Update)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="535" y="828" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p11_4" value="Hapus knife (Delete)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="155" y="888" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p11_5" value="Cari knife (Search)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="345" y="888" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="p11_6" value="Upload foto knife ($_FILES)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d6b656;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="535" y="888" width="170" height="40" as="geometry" />
+    </mxCell>
+    <mxCell id="ep11_1" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="aa" target="p11_1" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep11_2" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="aa" target="p11_2" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep11_3" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="aa" target="p11_3" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep11_4" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="aa" target="p11_4" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep11_5" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="aa" target="p11_5" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+    <mxCell id="ep11_6" style="edgeStyle=orthogonalEdgeStyle;" edge="1" source="aa" target="p11_6" parent="1"><mxGeometry relative="1" as="geometry"/></mxCell>
+
+
+    <!-- ============================================================
+         LEGEND
+         ============================================================ -->
+    <mxCell id="leg_box" value="" style="rounded=1;fillColor=#f9f9f9;strokeColor=#999;dashed=1;" vertex="1" parent="1">
+      <mxGeometry x="980" y="790" width="220" height="120" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_title" value="Keterangan" style="text;html=1;fontStyle=1;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="990" y="800" width="100" height="20" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_g" value="" style="ellipse;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+      <mxGeometry x="990" y="828" width="22" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_gl" value="Bisa diakses Guest" style="text;html=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1018" y="826" width="160" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_u" value="" style="ellipse;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+      <mxGeometry x="990" y="854" width="22" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_ul" value="Butuh Login (User)" style="text;html=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1018" y="852" width="160" height="18" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_a" value="" style="ellipse;fillColor=#ffe6cc;strokeColor=#d6b656;" vertex="1" parent="1">
+      <mxGeometry x="990" y="880" width="22" height="14" as="geometry" />
+    </mxCell>
+    <mxCell id="leg_al" value="Khusus Admin" style="text;html=1;fontSize=11;" vertex="1" parent="1">
+      <mxGeometry x="1018" y="878" width="160" height="18" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
